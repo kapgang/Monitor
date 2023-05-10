@@ -21,13 +21,13 @@ const urls = [
 let currentIndex = 0;
 
 // Create a new webhook client
-const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/1105680569813176351/1fQkPC0jCHwz_wa5ya6LaoRcA2D-vDQqX8h1_hMoNn81rUGfEb6jzIx-e0e4a6bmEpz1' });
+const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks/1094877013875105832/OF5iq4putm_y9WSV20Yt5qYXoFHLOMlqvJ_69CES-v5FAGQ2x-L2ZxfTk5pfGPpRJ2s0' });
 
 async function checkStock() {
   const browser = await puppeteer.launch({ 
     headless: true,
     // executablePath: 'C:/Program Files/Google/Chrome/Applications/chrome.exe',
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    // args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   const page = await browser.newPage();
 
