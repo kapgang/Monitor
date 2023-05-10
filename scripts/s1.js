@@ -26,7 +26,8 @@ const webhookClient = new WebhookClient({ url: 'https://discord.com/api/webhooks
 async function checkStock() {
   const browser = await puppeteer.launch({ 
     headless: true,
-    // executablePath: 'C:/Program Files/Google/Chrome/Applications/chrome.exe'
+    // executablePath: 'C:/Program Files/Google/Chrome/Applications/chrome.exe',
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
   const page = await browser.newPage();
 
