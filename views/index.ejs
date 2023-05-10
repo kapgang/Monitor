@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Node.js Script Control</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Script Controls</h1>
+  <div id="script-controls">
+    <% for (let i = 1; i <= 6; i++) { %>
+      <div class="script-row">
+        <span>Script <%= i %>:</span>
+        <button class="start-button" id="start<%=i%>">Start</button>
+        <button class="stop-button" id="stop<%=i%>">Stop</button>
+        <span class="status">Status: Not Running</span>
+      </div>
+    <% } %>
+  </div>
+  <div id="console">
+    <h2>Console
+        <ul id="logs">
+
+        </ul> 
+    </h2>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const startButtons = document.querySelectorAll('.start-button');
+        const stopButtons = document.querySelectorAll('.stop-button');
+        const statusTexts = document.querySelectorAll('.status');
+    
+        startButtons.forEach((button, index) => {
+            button.addEventListener('click', async () => {
+                try {
+                    const response = await fetch(`/start/${index + 1}`, { method: 'POST' });
+
+                    if (response.status === 200) {
+                        statusTexts[index].textContent = 'Status: Running';
+                    } else {
+                        alert(await response.text());
+                    }
+                } catch (error) {
+                    alert('Error starting script');
+                }
+            });
+        });
+
+        stopButtons.forEach((button, index) => {
+            button.addEventListener('click', async () => {
+                try {
+                    const response = await fetch(`/stop/${index + 1}`, { method: 'POST' });
+
+                    if (response.status === 200) {
+                        statusTexts[index].textContent = 'Status: Not Running';
+                    } else {
+                        alert(await response.text());
+                    }
+                } catch (error) {
+                    alert('Error stopping script');
+                }
+            });
+        });
+    });
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  const socket = io();
+
+  socket.on('scriptLog', function(log) {
+    const li = document.createElement('li');
+    li.textContent = log;
+    document.querySelector('#logs').appendChild(li);
+  });
+
+  // ...
+</script>
+
+</body>
+</html>
