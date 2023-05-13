@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 const { WebhookClient } = require('discord.js');
 
 const urls = [
-  // 'https://www.walgreens.com/store/c/cerave-face-and-body-moisturizing-cream-for-normal-to-dry-skin-with-hyaluronic-acid/ID=300396184-product',
+  'https://www.walgreens.com/store/c/cerave-face-and-body-moisturizing-cream-for-normal-to-dry-skin-with-hyaluronic-acid/ID=300396184-product',
   'https://www.walgreens.com/store/c/cerave-vitamin-c-face-serum,-skin-brightening-serum-for-face-with-hyaluronic-acid/ID=prod6402924-product',
   'https://www.walgreens.com/store/c/cerave-hydrating-facial-cleanser/ID=300396947-product',
   'https://www.walgreens.com/store/c/cerave-foaming-face-cleanser,-fragrance-free-face-wash-with-hyaluronic-acid/ID=300396945-product',
