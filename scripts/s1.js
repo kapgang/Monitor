@@ -15,7 +15,9 @@ const urls = [
   'https://www.walgreens.com/store/c/cerave-skin-renewing-gel-oil-face-moisturizer-fragrance-free/ID=300396970-product',
   'https://www.walgreens.com/store/c/cerave-renewing-salicylic-acid-body-cream-for-rough-and-bumpy-skin,-fragrance-free/ID=300396968-product',
   'https://www.walgreens.com/store/c/cerave-sa-body-wash-for-rough-and-bumpy-skin/ID=300396967-product',
-  'https://www.walgreens.com/store/c/cerave-under-eye-repair-cream-for-dark-circles-and-puffiness,-fragrance-free/ID=300396953-product'
+  'https://www.walgreens.com/store/c/cerave-under-eye-repair-cream-for-dark-circles-and-puffiness,-fragrance-free/ID=300396953-product',
+  'https://www.amazon.com/Nature-Made-Softgels-Flaxseed-Safflower/dp/B010RS1NBE/ref=sr_1_5?crid=27VEXRUK1ICHL&keywords=B010RS1NBE&qid=1684016260&sprefix=b010rs1nbe%2Caps%2C174&sr=8-5'
+  
 
 ];
 
