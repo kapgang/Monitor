@@ -19,7 +19,9 @@ const urls = [
   'https://www.amazon.com/Nature-Made-Softgels-Flaxseed-Safflower/dp/B010RS1NBE/ref=sr_1_5?crid=27VEXRUK1ICHL&keywords=B010RS1NBE&qid=1684016260&sprefix=b010rs1nbe%2Caps%2C174&sr=8-5',
   'https://www.walgreens.com/store/c/cerave-foaming-face-cleanser,-fragrance-free-face-wash-with-hyaluronic-acid/ID=300396946-product',
   'https://www.walgreens.com/store/c/hawaiian-tropic-lotion-sunscreen-broad-spectrum-spf-15-light-tropical/ID=prod6269234-product',
-  'https://www.walgreens.com/store/c/cerave-acne-foaming-cream-face-cleanser-for-sensitive-skin/ID=300399865-product'
+  'https://www.walgreens.com/store/c/cerave-acne-foaming-cream-face-cleanser-for-sensitive-skin/ID=300399865-product',
+  'https://www.walgreens.com/store/c/cerave-retinol-serum-for-post-acne-marks-and-skin-texture/ID=300396814-product',
+  'https://www.walgreens.com/store/c/black-girl-sunscreen-spf-30/ID=300425138-product'
   
 
 ];
