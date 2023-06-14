@@ -21,7 +21,8 @@ const urls = [
   'https://www.walgreens.com/store/c/hawaiian-tropic-lotion-sunscreen-broad-spectrum-spf-15-light-tropical/ID=prod6269234-product',
   'https://www.walgreens.com/store/c/cerave-acne-foaming-cream-face-cleanser-for-sensitive-skin/ID=300399865-product',
   'https://www.walgreens.com/store/c/cerave-retinol-serum-for-post-acne-marks-and-skin-texture/ID=300396814-product',
-  'https://www.walgreens.com/store/c/black-girl-sunscreen-spf-30/ID=300425138-product'
+  'https://www.walgreens.com/store/c/black-girl-sunscreen-spf-30/ID=300425138-product',
+  'https://www.walgreens.com/store/c/cerave-renewing-sa-body-cleanser-fragrance-free-body-wash/ID=300396965-product'
   
 
 ];
